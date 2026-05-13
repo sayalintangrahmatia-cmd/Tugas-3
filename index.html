@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil Pribadi Saya</title>
+
+    <!-- CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: hsla(34, 51%, 57%, 0.479);
+        }
+
+        header {
+            background-color: #703f18;
+            color: rgb(252, 251, 249);
+            text-align: center;
+            padding: 15px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .card {
+            background: rgb(255, 255, 255);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* RESPONSIVE */
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .card {
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="judul" class="header" title="Judul Halaman">
+    <h1>Profil Saya</h1>
+</header>
+
+<div class="container">
+
+    <!-- PROFIL -->
+    <div class="card" id="profil">
+        <h2>Data Diri</h2>
+
+        <p>Nama Lengkap: Lintang Rahmatia</p>
+        <p>NIM: 246250003</p>
+        <p>Hobi: Menyanyi, Olahraga, dan Traveling</p>
+
+        <!-- GAMBAR -->
+        <img src="titans.jpeg" alt="Foto Profil" width="150" height="150">
+    </div>
+
+    <!-- TABEL -->
+    <div class="card" id="biodata">
+        <h2>Biodata</h2>
+
+        <table>
+            <tr>
+                <th>Data</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td>Lintang Rahmatia</td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>08 April 2006</td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>Palu, Sulawesi Tengah</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>sayalintangrahmatia@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- LIST -->
+    <div class="card" id="hobi">
+        <h2>Hobi & Aktivitas</h2>
+
+        <h3>List Hobi</h3>
+        <ul>
+            <li>Menyanyi</li>
+            <li>Olahraga</li>
+            <li>Traveling</li>
+        </ul>
+
+        <h3>List Aktivitas</h3>
+        <ol>
+            <li>Bangun pagi</li>
+            <li>Olahraga</li>
+            <li>Sarapan</li>
+        </ol>
+    </div>
+
+    <!-- FORM -->
+    <div class="card" id="formulir">
+        <h2>Formulir</h2>
+
+        <form>
+            <label>Nama:</label><br>
+            <input type="text" name="nama"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+            <input type="radio" name="jk" value="Perempuan"> Perempuan<br><br>
+
+            <label>Hobi:</label><br>
+            <input type="checkbox" name="hobi"> Menyanyi
+            <input type="checkbox" name="hobi"> Olahraga
+            <input type="checkbox" name="hobi"> Traveling<br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>     
